@@ -1,3 +1,9 @@
+"""!@package font
+A collection of functions that style fonts in terminal.
+
+Each function flanks the inputed text with ANSI codes.
+"""
+
 from blue import blue
 from bold import bold
 from cyan import cyan
