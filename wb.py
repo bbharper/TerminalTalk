@@ -1,6 +1,10 @@
 
-import font
+import font, sys
 
-print( font.Colors.RED + "This should be red." + font.Colors.WHITE)
-print( font.Styles.BOLD + "This should be bold")
-print( font.italic("This should be italic") )
+first = sys.argv[0]
+
+if( len(sys.argv) < 2 ):
+    print( "The first argument: " + first)
+else:
+    print( "The first argument: " + first)
+    print( "The second argument: " + sys.argv[1])
