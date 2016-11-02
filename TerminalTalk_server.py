@@ -31,6 +31,8 @@ if __name__ == "__main__":
     # Add server to connections. This will be used to listen for new connections.
     connections.append(server)
 
+    print("Server running...")
+
     while True:
         # Use select function to check which sockets are ready to be read.
         readables, writables, errors = select.select(connections, [], [])
