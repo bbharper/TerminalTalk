@@ -4,14 +4,16 @@ A collection of functions that style fonts in terminal.
 Each function flanks the inputed text with ANSI codes.
 """
 
-from blue import blue
-from bold import bold
-from cyan import cyan
-from default import default
-from green import green
-from highlight import highlight
-from italic import italic
-from magenta import magenta
-from red import red
-from underline import underline
-from yellow import yellow
+from constants import Colors
+from constants import Styles
+from functions import blue
+from functions import bold
+from functions import cyan
+from functions import default
+from functions import green
+from functions import highlight
+from functions import italic
+from functions import magenta
+from functions import red
+from functions import underline
+from functions import yellow

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['blue',['blue',['../blue_8py.html#a64d42246b83ca0cde3f1abac7cd13c4e',1,'font::blue']]],
-  ['blue_2epy',['blue.py',['../blue_8py.html',1,'']]],
-  ['bold',['bold',['../bold_8py.html#a3c32509cc1859c9382a8931e63f09b36',1,'font::bold']]],
-  ['bold_2epy',['bold.py',['../bold_8py.html',1,'']]]
+  ['blue',['blue',['../functions_8py.html#ac4016dd2373b79081f110154a3fe2c96',1,'font::functions']]],
+  ['bold',['bold',['../functions_8py.html#a04f1e1329b23c89025a8dc62c930fdb6',1,'font::functions']]]
 ];

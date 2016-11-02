@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['italic',['italic',['../italic_8py.html#a38c42c391149def2032edc1a5e6ba99b',1,'font::italic']]],
-  ['italic_2epy',['italic.py',['../italic_8py.html',1,'']]]
+  ['italic',['italic',['../functions_8py.html#a74fb9e96ff2f43379b0e3b92266d6513',1,'font::functions']]]
 ];

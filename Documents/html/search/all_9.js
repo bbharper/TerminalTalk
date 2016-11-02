@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['underline',['underline',['../underline_8py.html#afd536442e6f108c359e67f1a283a7a2b',1,'font::underline']]],
-  ['underline_2epy',['underline.py',['../underline_8py.html',1,'']]]
+  ['red',['red',['../functions_8py.html#a92cba3e5f82247d09e1e045ce141ec60',1,'font::functions']]]
 ];

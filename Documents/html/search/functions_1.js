@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cyan',['cyan',['../cyan_8py.html#a6958d8729fbece70aac5c14da608244e',1,'font::cyan']]]
+  ['cyan',['cyan',['../functions_8py.html#a0434b99c6b721734c21210540c8c7dce',1,'font::functions']]]
 ];
