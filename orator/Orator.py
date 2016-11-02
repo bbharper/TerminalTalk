@@ -1,9 +1,9 @@
-import random
+import random, font
 
 class Orator:
 
     def __init__(self, socket):
         self.socket = socket
         self.username = "Anonymous"
-        colors = ['\033[34m', '\033[36m', '\033[32m', '\033[35m', '\033[31m', '\033[33m']
+        colors = [font.Colors.RED,font.Colors.YELLOW,font.Colors.BLUE,font.Colors.MAGENTA,font.Colors.CYAN,font.Colors.GREEN]
         self.color = colors[ random.randrange(0, len(colors) ) ]
