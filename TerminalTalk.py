@@ -27,9 +27,9 @@ if __name__ == "__main__":
         megaphone.connect(server_address)
 
         # Wait for server to request username
-        #request = megaphone.recv(buffer_size)
-        #if request == "username":
-        #    megaphone.send(username)
+        request = megaphone.recv(buffer_size)
+        if request == "username":
+            megaphone.send(username)
 
     except:
         print('Could not connect to TerminalTalk servers. Please try again later.')

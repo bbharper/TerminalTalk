@@ -60,9 +60,9 @@ if __name__ == "__main__":
 
                 # Add an Orator object to orators to keep track of user data
                 orators.append( Orator(socket_i) )
-                #socket_i.sendto("username", address)                   # Request username
-                #username = socket_i.recv(buffer_size)       # Wait to get a response
-                username = "Billy"
+                file_descriptor.send("username")                   # Request username
+                username = file_descriptor.recv(buffer_size)       # Wait to get a response
+                #username = "Billy"
                 orators[len(orators)-1].username = username # Assign username to Orator
 
 
