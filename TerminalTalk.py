@@ -16,7 +16,7 @@ if __name__ == "__main__":
     # Setup
     buffer_size = 2 ** 12
     server_port = 7777
-    server_ip = socket.gethostname()
+    server_ip =  "192.168.1.77" #socket.gethostname()
     server_address = ( server_ip, server_port )
 
     # Create socket

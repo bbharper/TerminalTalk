@@ -30,7 +30,7 @@ if __name__ == "__main__":
     #Setup
     port = 7777
     buffer_size = 2 ** 12
-    server_address = ( socket.gethostname(), port )
+    server_address = ( "", port )
 
     connections = [] # A list that keeps track of active sockets
     orators = [] # A list of active Orators
