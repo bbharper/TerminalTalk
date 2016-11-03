@@ -39,7 +39,6 @@ if __name__ == "__main__":
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind( server_address )
     server.listen(5)
-    server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     # Add server to connections. This will be used to listen for new connections.
     connections.append(server)
@@ -59,10 +58,9 @@ if __name__ == "__main__":
                 connections.append(file_descriptor)
 
                 # Add an Orator object to orators to keep track of user data
-                orators.append( Orator(socket_i) )
+                orators.append( Orator(file_descriptor) )
                 file_descriptor.send("username")                   # Request username
                 username = file_descriptor.recv(buffer_size)       # Wait to get a response
-                #username = "Billy"
                 orators[len(orators)-1].username = username # Assign username to Orator
 
 
@@ -74,17 +72,15 @@ if __name__ == "__main__":
                 # Determine which orator is speaking. Identify with position in orators array.
                 orator_index = 0
                 for i, orator in enumerate(orators):
-                    print(i, orator.username)
                     if orator.socket == socket_i:
                         orator_index = i
-                        #break
+                        break
 
                 # Now let the orator speak
                 try:
                     verbiage = socket_i.recv(buffer_size)
                     if verbiage:
                         pontificate( orators[orator_index], verbiage, connections, server, socket_i )
-                        #print(verbiage)
                         print( font.bold( orators[orator_index].color + orators[orator_index].username + ": " + font.Styles.RESET ) + verbiage)
                 except:
                     # This indicates that the connection has been broken.
