@@ -1,28 +1,9 @@
-#!/usr/bin/python
+"""!@file
+
+Main code for TerminalTalk server. Run this file to start server.
+"""
 import socket, select, font
-from orator import Orator
-
-def server_pontificate( verbiage, connections, server ):
-    for socket_i in connections:
-        if socket_i != server:
-            socket_i.send( "\n" + font.highlight(verbiage) + "\n")
-
-def pontificate( orator, verbiage, connections, server, client):
-    missive = font.bold( orator.color + orator.username + ": " + font.Styles.RESET ) + verbiage
-    for socket_i in connections:
-        if socket_i != server and socket_i != client:
-            try:
-                socket_i.send( "\n" + missive )
-            except:
-                orator_index = 0
-                for i, orator in enumerate(orators):
-                    if orator.socket == socket_i:
-                        orator_index = i
-                        break
-
-                socket_i.close()
-                connections.remove(socket_i)
-                orators.remove(orator_index)
+from server import *
 
 
 # Main
@@ -66,7 +47,7 @@ if __name__ == "__main__":
 
                 # State that a new user has entered.
                 entrance_message = username + " has entered."
-                server_pontificate( entrance_message, connections, server )
+                server_pontificate( entrance_message, connections, server, orators )
                 print(entrance_message)
             else:
                 # Determine which orator is speaking. Identify with position in orators array.
@@ -80,12 +61,12 @@ if __name__ == "__main__":
                 try:
                     verbiage = socket_i.recv(buffer_size)
                     if verbiage:
-                        pontificate( orators[orator_index], verbiage, connections, server, socket_i )
+                        pontificate( orators[orator_index], verbiage, connections, server, socket_i, orators )
                         print( font.bold( orators[orator_index].color + orators[orator_index].username + ": " + font.Styles.RESET ) + verbiage)
                 except:
                     # This indicates that the connection has been broken.
                     missive = orators[orator_index].username + " has exited."
-                    pontificate( orators[orator_index], missive, connections, server, socket_i )
+                    pontificate( orators[orator_index], missive, connections, server, socket_i, orators )
                     print(missive)
 
                     # Remove from connections and orators list

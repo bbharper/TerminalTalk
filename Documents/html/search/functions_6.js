@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['magenta',['magenta',['../functions_8py.html#abb25d9db89cedb6b2fb0b8371ae196b1',1,'font::functions']]]
+  ['highlight',['highlight',['../functions_8py.html#ab9a759f487e4dbefa145af79cff9686b',1,'font::functions']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['underline',['underline',['../functions_8py.html#af791023c45a6f4cdb456fb026331fca4',1,'font::functions']]]
+  ['pontificate',['pontificate',['../pontification_8py.html#a4bf031be83bc6feaeca7bfff6d2d7a8c',1,'server::pontification']]],
+  ['pontification_2epy',['pontification.py',['../pontification_8py.html',1,'']]]
 ];

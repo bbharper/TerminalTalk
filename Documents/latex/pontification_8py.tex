@@ -1,0 +1,70 @@
+\hypertarget{pontification_8py}{}\section{/home/bryan/\+Terminal\+Talk/server/pontification.py File Reference}
+\label{pontification_8py}\index{/home/bryan/\+Terminal\+Talk/server/pontification.\+py@{/home/bryan/\+Terminal\+Talk/server/pontification.\+py}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{pontification_8py_a63756b0b862790b57cc228bcd4a9b709}{server.\+pontification.\+server\+\_\+pontificate} (verbiage, connections, server, orators)
+\begin{DoxyCompactList}\small\item\em Make announcements from server to everyone connected. \end{DoxyCompactList}\item 
+def \hyperlink{pontification_8py_a4bf031be83bc6feaeca7bfff6d2d7a8c}{server.\+pontification.\+pontificate} (orator, verbiage, connections, server, client, orators)
+\begin{DoxyCompactList}\small\item\em Transmit a clients message to all other connected users. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{pontification.\+py@{pontification.\+py}!pontificate@{pontificate}}
+\index{pontificate@{pontificate}!pontification.\+py@{pontification.\+py}}
+\subsubsection[{\texorpdfstring{pontificate(orator, verbiage, connections, server, client, orators)}{pontificate(orator, verbiage, connections, server, client, orators)}}]{\setlength{\rightskip}{0pt plus 5cm}def server.\+pontification.\+pontificate (
+\begin{DoxyParamCaption}
+\item[{}]{orator, }
+\item[{}]{verbiage, }
+\item[{}]{connections, }
+\item[{}]{server, }
+\item[{}]{client, }
+\item[{}]{orators}
+\end{DoxyParamCaption}
+)}\hypertarget{pontification_8py_file_a4bf031be83bc6feaeca7bfff6d2d7a8c}{}\label{pontification_8py_file_a4bf031be83bc6feaeca7bfff6d2d7a8c}
+
+
+Transmit a clients message to all other connected users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orator} & The sending client\textquotesingle{}s Orator object. \\
+\hline
+{\em verbiage} & The message displayed. \\
+\hline
+{\em connections} & A list of all current connections (sockets). \\
+\hline
+{\em server} & The server\textquotesingle{}s socket. Used to ensure message isn\textquotesingle{}t sent to server itself (this would break pipe). \\
+\hline
+{\em client} & The sending client\textquotesingle{}s socket. Used to avoid sending message back to client. \\
+\hline
+{\em orators} & A list of Orator objects for currently connected clients. If a disconnection is discovered while function is being run, it is necessary to remove the object from the list. \\
+\hline
+\end{DoxyParams}
+\index{pontification.\+py@{pontification.\+py}!server\+\_\+pontificate@{server\+\_\+pontificate}}
+\index{server\+\_\+pontificate@{server\+\_\+pontificate}!pontification.\+py@{pontification.\+py}}
+\subsubsection[{\texorpdfstring{server\+\_\+pontificate(verbiage, connections, server, orators)}{server_pontificate(verbiage, connections, server, orators)}}]{\setlength{\rightskip}{0pt plus 5cm}def server.\+pontification.\+server\+\_\+pontificate (
+\begin{DoxyParamCaption}
+\item[{}]{verbiage, }
+\item[{}]{connections, }
+\item[{}]{server, }
+\item[{}]{orators}
+\end{DoxyParamCaption}
+)}\hypertarget{pontification_8py_file_a63756b0b862790b57cc228bcd4a9b709}{}\label{pontification_8py_file_a63756b0b862790b57cc228bcd4a9b709}
+
+
+Make announcements from server to everyone connected. 
+
+The message will be formatted (see font.\+highlight ) so as to stick out from all other text. Every connected user will see the message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em verbiage} & The message displayed. \\
+\hline
+{\em connections} & A list of all current connections (sockets). \\
+\hline
+{\em server} & The server\textquotesingle{}s socket. Used to ensure message isn\textquotesingle{}t sent to server itself (this would break pipe). \\
+\hline
+{\em orators} & A list of Orator objects for currently connected clients. If a disconnection is discovered while function is being run, it is necessary to remove the object from the list. \\
+\hline
+\end{DoxyParams}

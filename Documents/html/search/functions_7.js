@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['red',['red',['../functions_8py.html#a92cba3e5f82247d09e1e045ce141ec60',1,'font::functions']]]
+  ['italic',['italic',['../functions_8py.html#a74fb9e96ff2f43379b0e3b92266d6513',1,'font::functions']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['orator',['Orator',['../classorator_1_1Orator_1_1Orator.html',1,'orator::Orator']]]
+  ['italic',['italic',['../functions_8py.html#a74fb9e96ff2f43379b0e3b92266d6513',1,'font::functions']]]
 ];

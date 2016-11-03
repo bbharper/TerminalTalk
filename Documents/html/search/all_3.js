@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['font',['font',['../namespacefont.html',1,'']]],
-  ['functions_2epy',['functions.py',['../functions_8py.html',1,'']]]
+  ['default',['default',['../functions_8py.html#a370bf0fa5e6c47445b1e94b1029efb77',1,'font::functions']]]
 ];

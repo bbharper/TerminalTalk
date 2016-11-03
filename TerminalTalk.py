@@ -1,9 +1,10 @@
-#!/usr/bin/python
-import socket, select, sys
+"""!@file
 
-def eavesdrop():
-    sys.stdout.write("Talk: ")
-    sys.stdout.flush()
+Main code for TerminalTalk client. Run this file to use as client.
+"""
+import socket, select, sys
+from client import *
+
 
 # Main
 if __name__ == "__main__":

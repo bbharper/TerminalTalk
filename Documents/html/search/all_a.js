@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['styles',['Styles',['../classfont_1_1constants_1_1Styles.html',1,'font::constants']]]
+  ['orator',['Orator',['../classserver_1_1Orator_1_1Orator.html',1,'server::Orator']]],
+  ['orator_2epy',['Orator.py',['../Orator_8py.html',1,'']]]
 ];
