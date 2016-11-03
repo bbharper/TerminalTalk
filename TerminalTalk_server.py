@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
 
                 # State that a new user has entered.
-                entrance_message = username + " has entered."
+                entrance_message = orators[len(orators)-1].username + " has entered."
                 server_pontificate( entrance_message, connections, server )
                 print(entrance_message)
             else:
