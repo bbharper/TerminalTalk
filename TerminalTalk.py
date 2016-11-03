@@ -8,7 +8,7 @@ def eavesdrop():
 # Main
 if __name__ == "__main__":
 
-    if( len(argv) < 2 ):
+    if( len(sys.argv) < 2 ):
         username = "Anonymous"
     else:
         username = sys.argv[1]
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     # Setup
     buffer_size = 2 ** 12
     server_port = 7777
-    server_ip = '192.168.1.65'
+    server_ip = socket.gethostname()
     server_address = ( server_ip, server_port )
 
     # Create socket
@@ -27,9 +27,9 @@ if __name__ == "__main__":
         megaphone.connect(server_address)
 
         # Wait for server to request username
-        request = megaphone.recv(buffer_size)
-        if request == 'username':
-            megaphone.send(username)
+        #request = megaphone.recv(buffer_size)
+        #if request == "username":
+        #    megaphone.send(username)
 
     except:
         print('Could not connect to TerminalTalk servers. Please try again later.')
@@ -42,6 +42,7 @@ if __name__ == "__main__":
     # Create a list to keep track of connections (terminal input and megaphone)
     connections = [megaphone, sys.stdin]
 
+    eavesdrop()
     while True:
         # Get a list of readable sockets / inputs
         readables, writables, errors = select.select(connections, [], [])
