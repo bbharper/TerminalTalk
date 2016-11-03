@@ -67,16 +67,17 @@ if __name__ == "__main__":
 
 
                 # State that a new user has entered.
-                entrance_message = orators[len(orators)-1].username + " has entered."
+                entrance_message = username + " has entered."
                 server_pontificate( entrance_message, connections, server )
                 print(entrance_message)
             else:
                 # Determine which orator is speaking. Identify with position in orators array.
                 orator_index = 0
                 for i, orator in enumerate(orators):
+                    print(i, orator.username)
                     if orator.socket == socket_i:
                         orator_index = i
-                        break
+                        #break
 
                 # Now let the orator speak
                 try:
