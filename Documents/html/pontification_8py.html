@@ -93,15 +93,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a63756b0b862790b57cc228bcd4a9b709"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pontification_8py.html#a63756b0b862790b57cc228bcd4a9b709">server.pontification.server_pontificate</a> (verbiage, connections, server, orators)</td></tr>
-<tr class="memdesc:a63756b0b862790b57cc228bcd4a9b709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make announcements from server to everyone connected.  <a href="pontification_8py.html#a63756b0b862790b57cc228bcd4a9b709">More...</a><br /></td></tr>
-<tr class="separator:a63756b0b862790b57cc228bcd4a9b709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bf031be83bc6feaeca7bfff6d2d7a8c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pontification_8py.html#a4bf031be83bc6feaeca7bfff6d2d7a8c">server.pontification.pontificate</a> (orator, verbiage, connections, server, client, orators)</td></tr>
-<tr class="memdesc:a4bf031be83bc6feaeca7bfff6d2d7a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit a clients message to all other connected users.  <a href="pontification_8py.html#a4bf031be83bc6feaeca7bfff6d2d7a8c">More...</a><br /></td></tr>
-<tr class="separator:a4bf031be83bc6feaeca7bfff6d2d7a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1944985589e0f200909c48df6e868d4b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pontification_8py.html#a1944985589e0f200909c48df6e868d4b">server.pontification.megaphone</a> (verbiage, connections, ear_trumpet, orators)</td></tr>
+<tr class="memdesc:a1944985589e0f200909c48df6e868d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make announcements from server to everyone connected.  <a href="pontification_8py.html#a1944985589e0f200909c48df6e868d4b">More...</a><br /></td></tr>
+<tr class="separator:a1944985589e0f200909c48df6e868d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741dd47269202404cc19e2039433d2d7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pontification_8py.html#a741dd47269202404cc19e2039433d2d7">server.pontification.pontificate</a> (orator, verbiage, connections, ear_trumpet, orators)</td></tr>
+<tr class="memdesc:a741dd47269202404cc19e2039433d2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit a clients message to all other connected users.  <a href="pontification_8py.html#a741dd47269202404cc19e2039433d2d7">More...</a><br /></td></tr>
+<tr class="separator:a741dd47269202404cc19e2039433d2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_a4bf031be83bc6feaeca7bfff6d2d7a8c"></a>
+<a class="anchor" id="file_a1944985589e0f200909c48df6e868d4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def server.pontification.megaphone </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>verbiage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>connections</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ear_trumpet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>orators</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make announcements from server to everyone connected. </p>
+<p>The message will be formatted (see font.highlight ) so as to stick out from all other text. Every connected user will see the message.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verbiage</td><td>The message displayed. </td></tr>
+    <tr><td class="paramname">connections</td><td>A list of all current connections (sockets). </td></tr>
+    <tr><td class="paramname">ear_trumpet</td><td>The server's socket. Used to ensure message isn't sent to server itself (this would break pipe). </td></tr>
+    <tr><td class="paramname">orators</td><td>A list of Orator objects for currently connected clients. If a disconnection is discovered while function is being run, it is necessary to remove the object from the list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="file_a741dd47269202404cc19e2039433d2d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -127,13 +177,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramname"><em>ear_trumpet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -155,58 +199,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">orator</td><td>The sending client's Orator object. </td></tr>
     <tr><td class="paramname">verbiage</td><td>The message displayed. </td></tr>
     <tr><td class="paramname">connections</td><td>A list of all current connections (sockets). </td></tr>
-    <tr><td class="paramname">server</td><td>The server's socket. Used to ensure message isn't sent to server itself (this would break pipe). </td></tr>
-    <tr><td class="paramname">client</td><td>The sending client's socket. Used to avoid sending message back to client. </td></tr>
-    <tr><td class="paramname">orators</td><td>A list of Orator objects for currently connected clients. If a disconnection is discovered while function is being run, it is necessary to remove the object from the list. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="file_a63756b0b862790b57cc228bcd4a9b709"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def server.pontification.server_pontificate </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>verbiage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>connections</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>orators</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Make announcements from server to everyone connected. </p>
-<p>The message will be formatted (see font.highlight ) so as to stick out from all other text. Every connected user will see the message.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">verbiage</td><td>The message displayed. </td></tr>
-    <tr><td class="paramname">connections</td><td>A list of all current connections (sockets). </td></tr>
-    <tr><td class="paramname">server</td><td>The server's socket. Used to ensure message isn't sent to server itself (this would break pipe). </td></tr>
+    <tr><td class="paramname">ear_trumpet</td><td>The server's socket. Used to ensure message isn't sent to server itself (this would break pipe). </td></tr>
     <tr><td class="paramname">orators</td><td>A list of Orator objects for currently connected clients. If a disconnection is discovered while function is being run, it is necessary to remove the object from the list. </td></tr>
   </table>
   </dd>
