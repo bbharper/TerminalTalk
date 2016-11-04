@@ -10,9 +10,9 @@ from client import *
 if __name__ == "__main__":
 
     if( len(sys.argv) < 2 ):
-        username = "Anonymous"
+        moniker = "Anonymous"
     else:
-        username = sys.argv[1]
+        moniker = sys.argv[1]
 
     # Setup
     buffer_size = 2 ** 12
@@ -27,10 +27,10 @@ if __name__ == "__main__":
     try:
         megaphone.connect(server_address)
 
-        # Wait for server to request username
+        # Wait for server to request moniker
         request = megaphone.recv(buffer_size)
-        if request == "username":
-            megaphone.send(username)
+        if request == "moniker":
+            megaphone.send(moniker)
 
     except:
         print('Could not connect to TerminalTalk servers. Please try again later.')

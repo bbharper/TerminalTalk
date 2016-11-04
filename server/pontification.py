@@ -46,7 +46,7 @@ def pontificate( orator, verbiage, connections, ear_trumpet, orators):
     is discovered while function is being run, it is necessary to remove the object from the
     list.
     """
-    missive = font.bold( orator.color + orator.username + ": " + font.Styles.RESET ) + verbiage
+    missive = font.bold( orator.color + orator.moniker + ": " + font.Styles.RESET ) + verbiage
     for telegraph_i in connections:
         if telegraph_i != ear_trumpet and telegraph_i != orator.telegraph:
             try:

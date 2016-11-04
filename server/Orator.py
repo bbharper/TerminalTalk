@@ -7,8 +7,8 @@ import random, font
 class Orator:
     """!@brief Stores information about a connected client.
 
-    An Orator objects is used to represent a client. Each client has a username and color
-    associated with them. The username is provided by the client. The color is assigned randomly
+    An Orator objects is used to represent a client. Each client has a moniker and color
+    associated with them. The moniker is provided by the client. The color is assigned randomly
     each time the client connects.
     """
 
@@ -18,7 +18,7 @@ class Orator:
         @param telegraph The socket used to connect with client.
         """
         self.telegraph = telegraph
-        self.username = "Anonymous"
+        self.moniker = "Anonymous"
         colors = [
             font.Colors.RED,
             font.Colors.YELLOW,

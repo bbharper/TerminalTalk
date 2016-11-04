@@ -40,13 +40,13 @@ if __name__ == "__main__":
 
                 # Add an Orator object to orators to keep track of user data
                 orators.append( Orator(file_descriptor) )
-                file_descriptor.send("username")                   # Request username
-                username = file_descriptor.recv(buffer_size)       # Wait to get a response
-                orators[len(orators)-1].username = username # Assign username to Orator
+                file_descriptor.send("moniker")                   # Request moniker
+                moniker = file_descriptor.recv(buffer_size)       # Wait to get a response
+                orators[len(orators)-1].moniker = moniker # Assign moniker to Orator
 
 
                 # State that a new user has entered.
-                entrance_message = username + " has entered."
+                entrance_message = moniker + " has entered."
                 megaphone( entrance_message, connections, ear_trumpet, orators )
                 print(entrance_message)
             else:
@@ -62,10 +62,10 @@ if __name__ == "__main__":
                     verbiage = telegraph_i.recv(buffer_size)
                     if verbiage:
                         pontificate( orators[orator_index], verbiage, connections, ear_trumpet, orators )
-                        print( font.bold( orators[orator_index].color + orators[orator_index].username + ": " + font.Styles.RESET ) + verbiage)
+                        print( font.bold( orators[orator_index].color + orators[orator_index].moniker + ": " + font.Styles.RESET ) + verbiage)
                 except:
                     # This indicates that the connection has been broken.
-                    missive = orators[orator_index].username + " has exited."
+                    missive = orators[orator_index].moniker + " has exited."
                     pontificate( orators[orator_index], missive, connections, ear_trumpet, orators )
                     print(missive)
 
