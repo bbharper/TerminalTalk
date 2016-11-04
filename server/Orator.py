@@ -12,12 +12,12 @@ class Orator:
     each time the client connects.
     """
 
-    def __init__(self, socket):
+    def __init__(self, telegraph):
         """!@brief Constructor for Orator class.
 
-        @param socket The socket (file descriptor) used to connect with client.
+        @param telegraph The socket used to connect with client.
         """
-        self.socket = socket
+        self.telegraph = telegraph
         self.username = "Anonymous"
         colors = [
             font.Colors.RED,

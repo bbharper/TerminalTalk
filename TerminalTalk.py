@@ -17,7 +17,7 @@ if __name__ == "__main__":
     # Setup
     buffer_size = 2 ** 12
     server_port = 7777
-    server_ip = "192.168.1.77" 
+    server_ip = "192.168.1.77"
     server_address = ( server_ip, server_port )
 
     # Create socket
@@ -48,10 +48,10 @@ if __name__ == "__main__":
         # Get a list of readable sockets / inputs
         readables, writables, errors = select.select(connections, [], [])
 
-        for socket_i in readables:
+        for telegraph_i in readables:
             # See if a message has been sent from server
-            if socket_i == megaphone:
-                missive = socket_i.recv(buffer_size)
+            if telegraph_i == megaphone:
+                missive = telegraph_i.recv(buffer_size)
                 if missive:
                     sys.stdout.write(missive)
                     eavesdrop()

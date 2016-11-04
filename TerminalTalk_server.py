@@ -17,12 +17,12 @@ if __name__ == "__main__":
     orators = [] # A list of active Orators
 
     # Create the server socket
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind( server_address )
-    server.listen(5)
+    ear_trumpet = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    ear_trumpet.bind( server_address )
+    ear_trumpet.listen(5)
 
     # Add server to connections. This will be used to listen for new connections.
-    connections.append(server)
+    connections.append(ear_trumpet)
 
     print("Server running...")
 
@@ -31,11 +31,11 @@ if __name__ == "__main__":
         readables, writables, errors = select.select(connections, [], [])
 
         # Loop through readables. Address each.
-        for socket_i in readables:
+        for telegraph_i in readables:
             # A new connection has been requested
-            if socket_i == server:
+            if telegraph_i == ear_trumpet:
                 # Accept connection
-                file_descriptor, address = socket_i.accept()
+                file_descriptor, address = telegraph_i.accept()
                 connections.append(file_descriptor)
 
                 # Add an Orator object to orators to keep track of user data
@@ -47,35 +47,35 @@ if __name__ == "__main__":
 
                 # State that a new user has entered.
                 entrance_message = username + " has entered."
-                server_pontificate( entrance_message, connections, server, orators )
+                megaphone( entrance_message, connections, ear_trumpet, orators )
                 print(entrance_message)
             else:
                 # Determine which orator is speaking. Identify with position in orators array.
                 orator_index = 0
                 for i, orator in enumerate(orators):
-                    if orator.socket == socket_i:
+                    if orator.telegraph == telegraph_i:
                         orator_index = i
                         break
 
                 # Now let the orator speak
                 try:
-                    verbiage = socket_i.recv(buffer_size)
+                    verbiage = telegraph_i.recv(buffer_size)
                     if verbiage:
-                        pontificate( orators[orator_index], verbiage, connections, server, socket_i, orators )
+                        pontificate( orators[orator_index], verbiage, connections, ear_trumpet, orators )
                         print( font.bold( orators[orator_index].color + orators[orator_index].username + ": " + font.Styles.RESET ) + verbiage)
                 except:
                     # This indicates that the connection has been broken.
                     missive = orators[orator_index].username + " has exited."
-                    pontificate( orators[orator_index], missive, connections, server, socket_i, orators )
+                    pontificate( orators[orator_index], missive, connections, ear_trumpet, orators )
                     print(missive)
 
                     # Remove from connections and orators list
-                    socket_i.close()
+                    telegraph_i.close()
                     orators.remove( orators[orator_index] )
-                    connections.remove( socket_i )
+                    connections.remove( telegraph_i )
                     continue
 
 
 # If for any reason while loop is exited (this should never happen)
 # then close server.
-server.close()
+ear_trumpet.close()
