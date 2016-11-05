@@ -1,0 +1,238 @@
+\hypertarget{functions_8py}{}\subsection{/\+Terminal\+Talk/font/functions.py File Reference}
+\label{functions_8py}\index{/\+Terminal\+Talk/font/functions.\+py@{/\+Terminal\+Talk/font/functions.\+py}}
+
+
+Defines functions for surronding strings with A\+N\+SI codes for formating text.  
+
+
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{functions_8py_ac4016dd2373b79081f110154a3fe2c96}{font.\+functions.\+blue} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string blue. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a0434b99c6b721734c21210540c8c7dce}{font.\+functions.\+cyan} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string cyan. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a1a75ea7211b4c6d154d2377b7913f3d2}{font.\+functions.\+green} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string green. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_abb25d9db89cedb6b2fb0b8371ae196b1}{font.\+functions.\+magenta} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string magenta. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a92cba3e5f82247d09e1e045ce141ec60}{font.\+functions.\+red} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string red. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a364b11b1550671bb56014ddf45688488}{font.\+functions.\+yellow} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string red. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_af791023c45a6f4cdb456fb026331fca4}{font.\+functions.\+underline} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string underline. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a04f1e1329b23c89025a8dc62c930fdb6}{font.\+functions.\+bold} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string bold. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a74fb9e96ff2f43379b0e3b92266d6513}{font.\+functions.\+italic} (txt)
+\begin{DoxyCompactList}\small\item\em Makes inputed string italic. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_a370bf0fa5e6c47445b1e94b1029efb77}{font.\+functions.\+default} (txt)
+\begin{DoxyCompactList}\small\item\em Gives inputed string default formatting. \end{DoxyCompactList}\item 
+def \hyperlink{functions_8py_ab9a759f487e4dbefa145af79cff9686b}{font.\+functions.\+highlight} (txt)
+\begin{DoxyCompactList}\small\item\em Highlights inputed string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines functions for surronding strings with A\+N\+SI codes for formating text. 
+
+
+
+\subsubsection{Function Documentation}
+\index{functions.\+py@{functions.\+py}!blue@{blue}}
+\index{blue@{blue}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{blue(txt)}{blue(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+blue (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_ac4016dd2373b79081f110154a3fe2c96}{}\label{functions_8py_file_ac4016dd2373b79081f110154a3fe2c96}
+
+
+Makes inputed string blue. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}34m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for blue foreground. The suffix is the A\+N\+SI code for reset (white foreground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as blue. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!bold@{bold}}
+\index{bold@{bold}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{bold(txt)}{bold(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+bold (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a04f1e1329b23c89025a8dc62c930fdb6}{}\label{functions_8py_file_a04f1e1329b23c89025a8dc62c930fdb6}
+
+
+Makes inputed string bold. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}1m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}22m\textquotesingle{}. The prefix is the A\+N\+SI code for bold font on. The suffix is the A\+N\+SI code for bold font off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be made bold. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!cyan@{cyan}}
+\index{cyan@{cyan}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{cyan(txt)}{cyan(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+cyan (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a0434b99c6b721734c21210540c8c7dce}{}\label{functions_8py_file_a0434b99c6b721734c21210540c8c7dce}
+
+
+Makes inputed string cyan. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}36m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for cyan foreground. The suffix is the A\+N\+SI code for reset (white forground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as cyan. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!default@{default}}
+\index{default@{default}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{default(txt)}{default(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+default (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a370bf0fa5e6c47445b1e94b1029efb77}{}\label{functions_8py_file_a370bf0fa5e6c47445b1e94b1029efb77}
+
+
+Gives inputed string default formatting. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for reset (white foreground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be formatted as default. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!green@{green}}
+\index{green@{green}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{green(txt)}{green(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+green (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a1a75ea7211b4c6d154d2377b7913f3d2}{}\label{functions_8py_file_a1a75ea7211b4c6d154d2377b7913f3d2}
+
+
+Makes inputed string green. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}32m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for green foreground. The suffix is the A\+N\+SI code for reset (white forground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as green. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!highlight@{highlight}}
+\index{highlight@{highlight}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{highlight(txt)}{highlight(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+highlight (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_ab9a759f487e4dbefa145af79cff9686b}{}\label{functions_8py_file_ab9a759f487e4dbefa145af79cff9686b}
+
+
+Highlights inputed string. 
+
+Returns with inputed string with the prefixes \textquotesingle{}\textbackslash{}033\mbox{[}47m\textquotesingle{}, \textquotesingle{}\textbackslash{}033\mbox{[}30m\textquotesingle{}, and\textquotesingle{}\textbackslash{}033\mbox{[}3m\textquotesingle{}, and with the suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for italic, white background, and black foreground. The suffix is the A\+N\+SI code for reset (white forground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be highlighted. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!italic@{italic}}
+\index{italic@{italic}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{italic(txt)}{italic(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+italic (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a74fb9e96ff2f43379b0e3b92266d6513}{}\label{functions_8py_file_a74fb9e96ff2f43379b0e3b92266d6513}
+
+
+Makes inputed string italic. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}3m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}23m\textquotesingle{}. The prefix is the A\+N\+SI code for italic on. The suffix is the A\+N\+SI code for italic off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as italic. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!magenta@{magenta}}
+\index{magenta@{magenta}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{magenta(txt)}{magenta(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+magenta (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_abb25d9db89cedb6b2fb0b8371ae196b1}{}\label{functions_8py_file_abb25d9db89cedb6b2fb0b8371ae196b1}
+
+
+Makes inputed string magenta. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}35m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for magenta foreground. The suffix is the A\+N\+SI code for reset (white forground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as magenta. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!red@{red}}
+\index{red@{red}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{red(txt)}{red(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+red (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a92cba3e5f82247d09e1e045ce141ec60}{}\label{functions_8py_file_a92cba3e5f82247d09e1e045ce141ec60}
+
+
+Makes inputed string red. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}31m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for red foreground. The suffix is the A\+N\+SI code for reset (white forground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as red. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!underline@{underline}}
+\index{underline@{underline}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{underline(txt)}{underline(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+underline (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_af791023c45a6f4cdb456fb026331fca4}{}\label{functions_8py_file_af791023c45a6f4cdb456fb026331fca4}
+
+
+Makes inputed string underline. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}4m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}24m\textquotesingle{}. The prefix is the A\+N\+SI code for underline on. The suffix is the A\+N\+SI code for underline off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be underlined. \\
+\hline
+\end{DoxyParams}
+\index{functions.\+py@{functions.\+py}!yellow@{yellow}}
+\index{yellow@{yellow}!functions.\+py@{functions.\+py}}
+\paragraph[{\texorpdfstring{yellow(txt)}{yellow(txt)}}]{\setlength{\rightskip}{0pt plus 5cm}def font.\+functions.\+yellow (
+\begin{DoxyParamCaption}
+\item[{}]{txt}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8py_file_a364b11b1550671bb56014ddf45688488}{}\label{functions_8py_file_a364b11b1550671bb56014ddf45688488}
+
+
+Makes inputed string red. 
+
+Returns with inputed string with the prefix \textquotesingle{}\textbackslash{}033\mbox{[}33m\textquotesingle{} and suffix \textquotesingle{}\textbackslash{}033\mbox{[}0m\textquotesingle{}. The prefix is the A\+N\+SI code for red foreground. The suffix is the A\+N\+SI code for reset (white forground, black background).
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & A string. Will be displayed as red. \\
+\hline
+\end{DoxyParams}

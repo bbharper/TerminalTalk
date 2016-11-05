@@ -1,0 +1,58 @@
+\contentsline {part}{I\hspace {1em}}{1}{part.1}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Overview}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}The End Product}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}Theoretical Discussion}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Architecture}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Application Protocol}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Implementation}{2}{section.3}
+\contentsline {part}{II\hspace {1em}API}{2}{part.2}
+\contentsline {section}{\numberline {4}Namespace Index}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}Packages}{2}{subsection.4.1}
+\contentsline {section}{\numberline {5}Class Index}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}Class List}{3}{subsection.5.1}
+\contentsline {section}{\numberline {6}File Index}{3}{section.6}
+\contentsline {subsection}{\numberline {6.1}File List}{3}{subsection.6.1}
+\contentsline {section}{\numberline {7}Namespace Documentation}{3}{section.7}
+\contentsline {subsection}{\numberline {7.1}client Namespace Reference}{3}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Detailed Description}{4}{subsubsection.7.1.1}
+\contentsline {subsection}{\numberline {7.2}font Namespace Reference}{4}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Detailed Description}{4}{subsubsection.7.2.1}
+\contentsline {subsection}{\numberline {7.3}server Namespace Reference}{4}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Detailed Description}{4}{subsubsection.7.3.1}
+\contentsline {section}{\numberline {8}Class Documentation}{4}{section.8}
+\contentsline {subsection}{\numberline {8.1}font.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}constants.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Colors Class Reference}{4}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Detailed Description}{4}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}server.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Orator.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Orator Class Reference}{5}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Detailed Description}{5}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Constructor \& Destructor Documentation}{5}{subsubsection.8.3.2}
+\contentsline {paragraph}{\numberline {8.3.2.1}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}(self, telegraph)}{5}{paragraph.8.3.2.1}
+\contentsline {subsection}{\numberline {8.4}font.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}constants.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Styles Class Reference}{5}{subsection.8.4}
+\contentsline {subsubsection}{\numberline {8.4.1}Detailed Description}{6}{subsubsection.8.4.1}
+\contentsline {section}{\numberline {9}File Documentation}{6}{section.9}
+\contentsline {subsection}{\numberline {9.1}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/client/eavesdrop.py File Reference}{6}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/font/constants.py File Reference}{6}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}Detailed Description}{6}{subsubsection.9.2.1}
+\contentsline {subsection}{\numberline {9.3}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/font/functions.py File Reference}{6}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Detailed Description}{7}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}Function Documentation}{7}{subsubsection.9.3.2}
+\contentsline {paragraph}{\numberline {9.3.2.1}blue(txt)}{7}{paragraph.9.3.2.1}
+\contentsline {paragraph}{\numberline {9.3.2.2}bold(txt)}{7}{paragraph.9.3.2.2}
+\contentsline {paragraph}{\numberline {9.3.2.3}cyan(txt)}{8}{paragraph.9.3.2.3}
+\contentsline {paragraph}{\numberline {9.3.2.4}default(txt)}{8}{paragraph.9.3.2.4}
+\contentsline {paragraph}{\numberline {9.3.2.5}green(txt)}{8}{paragraph.9.3.2.5}
+\contentsline {paragraph}{\numberline {9.3.2.6}highlight(txt)}{8}{paragraph.9.3.2.6}
+\contentsline {paragraph}{\numberline {9.3.2.7}italic(txt)}{9}{paragraph.9.3.2.7}
+\contentsline {paragraph}{\numberline {9.3.2.8}magenta(txt)}{9}{paragraph.9.3.2.8}
+\contentsline {paragraph}{\numberline {9.3.2.9}red(txt)}{9}{paragraph.9.3.2.9}
+\contentsline {paragraph}{\numberline {9.3.2.10}underline(txt)}{9}{paragraph.9.3.2.10}
+\contentsline {paragraph}{\numberline {9.3.2.11}yellow(txt)}{9}{paragraph.9.3.2.11}
+\contentsline {subsection}{\numberline {9.4}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/server/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Orator.py File Reference}{10}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/server/pontification.py File Reference}{10}{subsection.9.5}
+\contentsline {subsubsection}{\numberline {9.5.1}Function Documentation}{10}{subsubsection.9.5.1}
+\contentsline {paragraph}{\numberline {9.5.1.1}megaphone(verbiage, connections, ear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}trumpet, orators)}{10}{paragraph.9.5.1.1}
+\contentsline {paragraph}{\numberline {9.5.1.2}pontificate(orator, verbiage, connections, ear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}trumpet, orators)}{10}{paragraph.9.5.1.2}
+\contentsline {subsection}{\numberline {9.6}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk.py File Reference}{11}{subsection.9.6}
+\contentsline {subsubsection}{\numberline {9.6.1}Detailed Description}{11}{subsubsection.9.6.1}
+\contentsline {subsection}{\numberline {9.7}/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Terminal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}Talk\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\DOTSB \leftarrow \joinrel \rhook $}}{}{}server.py File Reference}{11}{subsection.9.7}
+\contentsline {subsubsection}{\numberline {9.7.1}Detailed Description}{12}{subsubsection.9.7.1}

@@ -14,7 +14,7 @@ if __name__ == "__main__":
     else:
         moniker = sys.argv[1]
 
-    # Setup
+    # Connection Setup
     buffer_size = 2 ** 12
     server_port = 7777
     server_ip = "192.168.1.77"
@@ -37,8 +37,7 @@ if __name__ == "__main__":
         sys.exit()
 
     # From here on out, we only want to briefly listen to the megaphone socket
-    # rather than waiting for data to be recieved. Thus
-    , set a timeout
+    # rather than waiting for data to be recieved. Thus, set a timeout
     megaphone.settimeout(2)
 
     # Create a list to keep track of connections (terminal input and megaphone)
