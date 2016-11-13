@@ -14,6 +14,6 @@ TO START CLIENT:
 - Enter 'python TerminalTalk.py [moniker]'
 
 COMMANDS:
-\setmoniker [moniker]     # Moniker is your desired username
-\setcolor [color]         # Available colors are red, green, yellow, blue, magenta, and cyan
-\disconnect               # Must be followed by a space
+\\setmoniker [moniker]     # Moniker is your desired username
+\\setcolor [color]         # Available colors are red, green, yellow, blue, magenta, and cyan
+\\disconnect               # Must be followed by a space
