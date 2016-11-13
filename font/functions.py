@@ -2,6 +2,31 @@
 
 Defines functions for surronding strings with ANSI codes for formating text.
 """
+from constants import Colors
+
+def get_color_code(color):
+    """!@brief Returns ANSI color code for specified color.
+
+    Returns ANSI code necessary to make subsequent text into specified color. Example:
+    print( get_color_code("green") + "This text will be green." )
+
+    If color is not availbe, the function will return False
+
+    @param color A string containing color name. Example "green"
+    """
+    
+    switch = {
+        "black": Colors.BLACK,
+        "red": Colors.RED,
+        "green": Colors.GREEN,
+        "yellow": Colors.YELLOW,
+        "blue": Colors.BLUE,
+        "magenta": Colors.MAGENTA,
+        'cyan': Colors.CYAN,
+        "white": Colors.WHITE
+    }
+    result = switch.get(color, False)
+    return result
 
 def blue(txt):
     """!@brief Makes inputed string blue.

@@ -13,16 +13,14 @@ if __name__ == "__main__":
     buffer_size = 2 ** 12
     server_address = ( "", port )
 
-    connections = [] # A list that keeps track of active sockets
-    orators = [] # A list of active Orators
 
     # Create the server socket
     ear_trumpet = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ear_trumpet.bind( server_address )
     ear_trumpet.listen(5)
 
-    # Add server to connections. This will be used to listen for new connections.
-    connections.append(ear_trumpet)
+    connections = [ear_trumpet] # A list that keeps track of active sockets
+    orators = [] # A list of active Orators
 
     print("Server running...")
 
@@ -57,12 +55,17 @@ if __name__ == "__main__":
                         orator_index = i
                         break
 
-                # Now let the orator speak
+                # Now read the orator socket
                 try:
                     verbiage = telegraph_i.recv(buffer_size)
                     if verbiage:
-                        pontificate( orators[orator_index], verbiage, connections, ear_trumpet, orators )
-                        print( font.bold( orators[orator_index].color + orators[orator_index].moniker + ": " + font.Styles.RESET ) + verbiage)
+                        # Check whether the recieved missive is a command
+                        if verbiage[0] == "\\":
+                            # Decode and action command
+                            obey(verbiage, orators[orator_index], telegraph_i)
+                        else:
+                            pontificate( orators[orator_index], verbiage, connections, ear_trumpet, orators )
+                            print( font.bold( orators[orator_index].color + orators[orator_index].moniker + ": " + font.Styles.RESET ) + verbiage)
                 except:
                     # This indicates that the connection has been broken.
                     missive = orators[orator_index].moniker + " has exited."

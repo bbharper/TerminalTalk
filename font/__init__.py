@@ -1,7 +1,6 @@
 """!@package font
-A collection of functions that style fonts in terminal.
 
-Each function flanks the inputed text with ANSI codes.
+A collection of functions that style fonts in terminal.
 """
 
 from constants import *

@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # Create socket
     megaphone = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    # Establish connection with server
+    # Three-way Handshake
     try:
         megaphone.connect(server_address)
 
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # Create a list to keep track of connections (terminal input and megaphone)
     connections = [megaphone, sys.stdin]
 
-    eavesdrop()
+    eavesdrop() # Listen for user input
     while True:
         # Get a list of readable sockets / inputs
         readables, writables, errors = select.select(connections, [], [])
@@ -54,7 +54,7 @@ if __name__ == "__main__":
                 missive = telegraph_i.recv(buffer_size)
                 if missive:
                     sys.stdout.write(missive)
-                    eavesdrop()
+                    eavesdrop() # Listen for user input
                 else:
                     # If misssive returns False, the connection is broken.
                     print("\n The connection has been lost... please reconnect.")
@@ -63,4 +63,4 @@ if __name__ == "__main__":
                 # See if the user has entered a message
                 verbiage = sys.stdin.readline()
                 megaphone.send(verbiage)
-                eavesdrop()
+                eavesdrop() # Listen for user input
