@@ -11,8 +11,8 @@ if __name__ == "__main__":
     #Setup
     port = 7777
     buffer_size = 2 ** 12
-    #server_ip = "192.168.1.77" # Change to public or local IP depending on intended use.
-    server_address = ( "", port )
+    server_ip = "" # Change to public or local IP depending on intended use.
+    server_address = ( server_ip, port )
 
 
     # Create the server socket
