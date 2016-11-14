@@ -4,12 +4,6 @@ Terminal Run Chat Application
 Requirements: Python 2.7
 
 SETUP:
-- Open TerminalTalk_server.py
-  - For use on LAN
-    - Change server_address (line 14) to server's local IP
-  - For use on WAN
-    - Change server_address (line 14) to server's public IP
-
 - Open TerminalTalk.py
   - For use on LAN
     - Change server_address (line 20) to server's local IP
