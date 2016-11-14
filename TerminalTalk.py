@@ -17,8 +17,8 @@ if __name__ == "__main__":
     # Connection Setup
     buffer_size = 2 ** 12
     server_port = 7777
-    server_ip = "192.168.1.77" # Change to public or local IP depending on intended use.
-    server_address = ( server_ip, server_port )
+    #server_ip = "192.168.1.77" # Change to public or local IP depending on intended use.
+    server_address = ( "", server_port )
 
     # Create socket
     megaphone = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
